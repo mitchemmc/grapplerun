@@ -1,113 +1,118 @@
 @font-face {
-    font-family: "MunroSmall";
-    src: url(../fonts/MunroSmall.ttf) format("truetype");
+  font-family: 'MunroSmall';
+  src: url(../fonts/MunroSmall.ttf) format('truetype');
 }
 body {
-    background: #161820;
-    margin: 0;
+  background: #161820;
+  margin: 0;
 }
 .wrapper {
-    width: 100%;
-    min-height: 650px;
-    display: flex;
-    flex-direction: column;
-    background-size: contain;
-    background-image: url('../images/Background.png');
-    background-repeat-y: no-repeat;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  background-image: url('../images/Background.png');
+  background-repeat-y: no-repeat;
+  align-items: center;
 }
 .header {
-    text-align: center;
-    padding: 60px;
-    margin-bottom: 60px;
-    letter-spacing: 4px;
+  text-align: center;
+  padding: 60px;
+  margin-bottom: 60px;
+  letter-spacing: 4px;
 }
 h1 {
-    color: #FFBB65;
-    text-shadow:
-    -5px -5px 0 #473400,
-     5px -5px 0 #473400,
-    -5px  5px 0 #473400,
-     5px  5px 0 #473400;
-    width: 100%;
-    max-width: 1024px;
-    font-size: 120px;
-    font-family: "MunroSmall";
-    margin: 0;
+  color: #ffbb65;
+  text-shadow: -5px -5px 0 #473400, 5px -5px 0 #473400, -5px 5px 0 #473400,
+    5px 5px 0 #473400;
+  width: 100%;
+  max-width: 1024px;
+  font-size: 120px;
+  font-family: 'MunroSmall';
+  margin: 0;
 }
 h2 {
-    color: #DBDBDB;
-    width: 100%;
-    max-width: 1024px;
-    font-size: 48px;
-    font-family: "MunroSmall";
-    margin: 0;
+  color: #dbdbdb;
+  width: 100%;
+  max-width: 1024px;
+  font-size: 48px;
+  font-family: 'MunroSmall';
+  margin: 0;
 }
 
 .buttons {
-    width: 100%;
-    max-width: 768px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 50px;
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .windows-button {
-    width: 368px;
-    height: 99px;
-    background-image: url('../images/WindowsButton.png');
-    z-index: 10;
+  width: 368px;
+  height: 99px;
+  background-image: url('../images/WindowsButton.png');
+  z-index: 10;
 }
 
 .mac-button {
-    width: 229px;
-    height: 99px;
-    background-image: url('../images/MacButton.png');
-    z-index: 10;
+  width: 229px;
+  height: 99px;
+  background-image: url('../images/MacButton.png');
+  z-index: 10;
 }
 
 .video {
-    margin: 100px;
-    margin-top: 0;
+  margin: 100px;
+  margin-top: 0;
 
-    width: 80%;
-    height: 720px;
+  width: 80%;
+  height: 720px;
 
-    max-width: 1280px;
+  max-width: 1280px;
+
+  background-color: #161820;
 }
 
 .about {
-    width: 80%;
-    align-content: center;
-    max-width: 1024px;
-    margin-bottom: 50px;
+  width: 80%;
+  align-content: center;
+  max-width: 1024px;
+  margin-bottom: 50px;
 }
 
 p {
-    font-family: "MunroSmall";
-    color: #DBDBDB;
-    width: 100%;
-    margin: 0;
-    font-size: 1.6em;
+  font-family: 'MunroSmall';
+  color: #dbdbdb;
+  width: 100%;
+  margin: 0;
+  font-size: 1.6em;
 }
 
 .about h2 {
-    text-align: center;
-    max-width: none;
+  text-align: center;
+  max-width: none;
 }
 
 a {
-    text-decoration: none;
-    color: #2196F3;
+  text-decoration: none;
+  color: #2196f3;
 }
 
 @media (max-width: 640px) {
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-        align-content: space-between;
-        height: 250px;
-    }
-}
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 250px;
+  }
 
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
